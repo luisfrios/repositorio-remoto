@@ -1,9 +1,12 @@
-const tela = require('prompt-sync')()
+const tela = require('readline-sync')
 
-var nome:string
-var idade:number
+//declarando as variáveis
+let nome:string
+let idade:number
 
-nome = tela('Qual é o seu nome? ')
-idade = Number( tela('Qual é sua idade? '))
+//setando valores
+nome = tela.question('Qual é o seu nome? ')
+idade = Number( tela.question('Qual é sua idade? '))
 
+//saída de informações
 console.log("nome: " + nome + ", idade: " + idade)
